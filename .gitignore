@@ -1,52 +1,13 @@
-# Prerequisites
-*.d
+#include <stdio.h>
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
 
-# Linker output
-*.ilk
-*.map
-*.exp
+int main (){
+    char nome[20];
 
-# Precompiled Headers
-*.gch
-*.pch
+    printf("Digite o seu primeiro nome: ");
+    scanf("%s" , nome);
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+    printf("Esse eh o seu nome: %s" , nome);
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+    return 0;
+}
